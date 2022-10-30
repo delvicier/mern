@@ -7,5 +7,5 @@ export const pool = createPool({
     port: '3306',
     user: 'root',
     password: process.env.DBPASS,
-    database: 'mern',
+    database: process.env.DBNAME,
 })
