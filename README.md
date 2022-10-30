@@ -1,7 +1,7 @@
 # mern
 Proyecto App Web 3 ITI
 
-Dependencias
+Dependencias:
 
 Node v19.0.0
 
