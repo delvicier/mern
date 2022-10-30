@@ -2,6 +2,7 @@
 Proyecto App Web 3 ITI
 
 Leer archivo .env.example y crear .env
+
 Ejemplo de Base de Datos a crear en carpeta database
 
 Dependencias:
