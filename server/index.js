@@ -1,17 +1,16 @@
 import express from "express";
-import {PORT} from './config.js'
-import indexRoutes from './routes/index.routes.js';
 import notasRoutes from './routes/notas.routes.js';
+import * as dotenv from 'dotenv'
 
+dotenv.config();
 const app = express();
 
 // Antes que pasen las peticiones a las rutas debemos darle formato:
 app.use(express.json());
 
-app.use(indexRoutes);
-
 // Agregando las rutas al index
 app.use(notasRoutes);
 
-app.listen(PORT);
-console.log(`Servidor corriendo en puerto ${PORT}`);
+app.listen(process.env.PUERTO, () => {
+    console.log('Servidor corriendo en puerto: ' +process.env.PUERTO);
+});
