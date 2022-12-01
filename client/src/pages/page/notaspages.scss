@@ -1,0 +1,16 @@
+.pages{
+    flex: 1;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    background-color: white;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    .container{
+        padding: 20px;
+    }
+}

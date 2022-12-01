@@ -1,0 +1,82 @@
+.registrar{
+    height: 100vh;
+    background-color: rgb(167, 173, 254);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card{
+        width: 50%;
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+        min-height: 500px;
+        overflow: hidden;
+        flex-direction: row-reverse;
+
+        .left{
+            flex: 1;
+            background: linear-gradient(rgba(121, 82, 200, 0.5),rgba(62, 14, 157, 0.188)), url(https://images.unsplash.com/photo-1559494007-9f5847c49d94?ixlib=rb-4.0.3&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb) center;
+            background-size: cover;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            color: white;
+            h1{
+                font-size: 50px;
+                line-height: 50px;
+            }
+            p{
+                font-size: 16px;
+            }
+            span{
+                font-size: 16px;
+                padding-bottom: 10px;
+            } 
+            button{
+                width: 50%;
+                padding: 10px;
+                border: none;
+                background-color: white;
+                color: rebeccapurple;
+                font-weight: bold;
+                border-radius: 10px;
+                cursor: pointer;
+
+            }
+        }
+
+        .right{
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+            h1{
+                color: gray;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                input{
+                    border: none;
+                    border-bottom: 1px solid lightgray;
+                    padding: 20px 10px;
+
+                }
+                button{
+                    width: 50%;
+                    padding: 10px;
+                    border: none;
+                    color: white;
+                    font-weight: bold;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    background-color: rgb(127, 72, 181);
+                }
+            }
+        }
+    }
+}

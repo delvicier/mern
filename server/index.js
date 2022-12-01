@@ -1,4 +1,5 @@
 import express from "express";
+import cors from 'cors'
 import notasRoutes from './routes/notas.routes.js';
 import * as dotenv from 'dotenv'
 
@@ -7,6 +8,7 @@ const app = express();
 
 // Antes que pasen las peticiones a las rutas debemos darle formato:
 app.use(express.json());
+app.use(cors ({ origin: 'http://localhost:5173' }))
 
 // Agregando las rutas al index
 app.use(notasRoutes);

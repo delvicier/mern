@@ -1,0 +1,40 @@
+@import "../../App.scss";
+
+.navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        height: 50px;
+        border-bottom: 1px solid white;
+        position: sticky;
+        top: 0;
+        background-color: #7719ab;
+        color: white;
+
+        .left{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            
+            span{
+                font-weight: bold;
+                font-size: 20px;
+                color: white;
+
+            }
+            .logo{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    object-fit: cover;
+
+                } 
+        }
+    }
+}
