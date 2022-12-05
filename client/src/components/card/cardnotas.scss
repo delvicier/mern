@@ -1,37 +1,63 @@
-.cardnotas{
-    flex: 1;
-    position: relative;
+@import "../../App.scss";
 
-    .container{
+.cardnotas{
+    @include themify($themes) {
+        flex: 1;
         position: relative;
 
-
-        .left{
-            background-color: whitesmoke;
-            padding: 25px;
-            border-radius: 10px;
+        .container{
             position: relative;
-            -webkit-box-shadow: 2px 11px 10px -11px rgba(0,0,0,0.3);
-            -moz-box-shadow: 2px 11px 10px -11px rgba(0,0,0,0.3);
-            box-shadow: 2px 11px 10px -11px rgba(0,0,0,0.3);
 
-            .derecha{
-                width: 20px;
-                height: 171px;
-                border-radius: 5%;
-                background-color: limegreen;
-                position: absolute;
-                top:0px;
-                left:-10px;
+
+            .left{
+                background-color: themed("bgSoft2");
+                padding: 25px;
+                border-radius: 10px;
+                position: relative;
+                -webkit-box-shadow: 2px 11px 10px -11px rgba(0,0,0,0.3);
+                -moz-box-shadow: 2px 11px 10px -11px rgba(0,0,0,0.3);
+                box-shadow: 2px 11px 10px -11px rgba(0,0,0,0.3);
+
+                .derecha{
+                    width: 20px;
+                    height: 171px;
+                    border-radius: 5%;
+                    background-color: limegreen;
+                    position: absolute;
+                    top:0px;
+                    left:-10px;
+                }
+
+                .botones{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    position: absolute;
+                    top: -5px;
+                    right: -3px;
+
+                    button{
+                        margin: 5px;
+                        padding: 10px 15px;
+                        border: none;
+                        color: white;
+                        font-weight: bold;
+                        border-radius: 0px 0px 45% 45%;
+                        cursor: pointer;
+                        background-color: themed(but);
+                        -webkit-box-shadow: -8px 11px 10px -10px rgba(0,0,0,0.2);
+                        -moz-box-shadow: -8px 11px 10px -10px rgba(0,0,0,0.2);
+                        box-shadow: -8px 11px 10px -10px rgba(0,0,0,0.2);
+                    }
+                }
+
             }
 
-            .botones{
+            .rigth{
+                background-color: #8427b6;
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-                position: absolute;
-                top: -5px;
-                right: -3px;
 
                 button{
                     margin: 5px;
@@ -39,33 +65,11 @@
                     border: none;
                     color: white;
                     font-weight: bold;
-                    border-radius: 0px 0px 45% 45%;
+                    border-radius: 10px;
                     cursor: pointer;
                     background-color: #8427b6;
-                    -webkit-box-shadow: -8px 11px 10px -10px rgba(0,0,0,0.2);
-                    -moz-box-shadow: -8px 11px 10px -10px rgba(0,0,0,0.2);
-                    box-shadow: -8px 11px 10px -10px rgba(0,0,0,0.2);
+
                 }
-            }
-
-        }
-
-        .rigth{
-            background-color: #8427b6;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-
-            button{
-                margin: 5px;
-                padding: 10px 15px;
-                border: none;
-                color: white;
-                font-weight: bold;
-                border-radius: 10px;
-                cursor: pointer;
-                background-color: #8427b6;
-
             }
         }
     }

@@ -1,6 +1,14 @@
+:root {
+    --white: #fafafb;
+    --pur:#7050c1;
+    --blue:#924555;
+    --blue-dark:#2a73c2;
+    --green: #2c7b90;
+   }
+
 .registrar{
     height: 100vh;
-    background-color: rgb(167, 173, 254);
+    background: linear-gradient(to bottom,var(--pur),var(--blue));
     display: flex;
     align-items: center;
     justify-content: center;

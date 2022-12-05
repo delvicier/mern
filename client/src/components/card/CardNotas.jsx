@@ -39,19 +39,6 @@ function CardNotas({nota}) {
 
         </div>
 
-        {/* <div className="rigth">
-
-          <button onClick={() => eliminarNotas(nota.id)}>Eliminar
-          </button>
-
-          <button onClick={() => navegar(`/edit/${nota.id}`)}>Editar
-          </button>
-
-          <button onClick={() => visto(nota.realizado)}>visto
-          </button>
-
-        </div> */}
-
       </div>
     </div>
   )

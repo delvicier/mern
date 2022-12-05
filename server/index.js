@@ -8,7 +8,7 @@ const app = express();
 
 // Antes que pasen las peticiones a las rutas debemos darle formato:
 app.use(express.json());
-app.use(cors ({ origin: 'http://localhost:5173' }))
+app.use(cors ({ origin: 'http://localhost:3000' }))
 
 // Agregando las rutas al index
 app.use(notasRoutes);

@@ -9,7 +9,7 @@ const Login = () => {
     <div className="login">
       <div className="card">
         <div className="left">
-          <h1>Hola miau.</h1>
+          <h1>Hola Sr.</h1>
           <p>El gato doméstico, llamado más comúnmente gato, y de forma coloquial minino o michi, es un mamífero carnívoro de la familia Felidae.</p>
           <span>Aun no te has registrado?</span>
           <Link to="/register">

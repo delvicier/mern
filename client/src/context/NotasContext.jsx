@@ -28,6 +28,7 @@ export const NotasContextProvider = ({children}) => {
         try {
             const response = await eliminarNotaRequest(id);
             setNotas(notas.filter(nota => nota.id !== id))
+            console.log(response)
             // filter crea un nuevo array que remplaza el original con los datos que si cumplen la condicion, en este caso:
             // if { los id iniciales no son iguales al id eliminado? si, entonces eliminalo } desigualdad estricta. 
         } catch (error) {

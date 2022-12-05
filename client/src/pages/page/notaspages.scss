@@ -1,16 +1,22 @@
+@import "../../App.scss";
+
 .pages{
-    flex: 1;
-    position: sticky;
-    top: 70px;
-    height: calc(100vh - 70px);
-    overflow: scroll;
-    background-color: white;
+    @include themify($themes) {
+        background-color: themed("bg");
+        color: themed("textColor");
+        
+        flex: 1;
+        position: sticky;
+        top: 70px;
+        height: calc(100vh - 70px);
+        overflow: scroll;
 
-    &::-webkit-scrollbar{
-        display: none;
-    }
+        &::-webkit-scrollbar{
+            display: none;
+        }
 
-    .container{
-        padding: 20px;
+        .container{
+            padding: 20px;
+        }
     }
 }
