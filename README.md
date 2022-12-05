@@ -16,7 +16,3 @@ cors 2.8.5
 dotenv 16.0.3
 
 mysql2 2.3.3
-
-Dependencias frontend:
-
-
